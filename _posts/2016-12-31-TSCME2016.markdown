@@ -1,6 +1,6 @@
 ---
 layout: post
-title: THE INFLUENCE FACTORS ON HEAT TRANSFER PERFORMANCE OF LOOP THERMOSYPHON SYSTEM, TCSME, 2016.
+title: The Influence Factors On Heat Transfer Performance Of Loop Thermosyphon System, TCSME, 2016.
 date: 2016-12-31 08:00:00 +0800
 description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. # Add post description (optional)
 img: TCSME2016.jpg # Add image post (optional)
