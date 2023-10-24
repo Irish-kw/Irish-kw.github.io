@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Numerical Simulation for Flow of Rolling Piston Type of Rotary Compressor, energies, 2020.
+title: Numerical Simulation for Flow of Rolling Piston Type of Rotary Compressor, Energies, 2020.
 date: 2020-05-16 08:00:00 +0800
 description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. # Add post description (optional)
 img: energies2020.png # Add image post (optional)
 fig-caption: # Add figcaption (optional)
-tags: [Heat Transfer, Numerical]
+tags: [Rotary compressor, Rolling piston, Numerical, Compression volume, Reed valve]
 ---
 In this numerical study, the temperature, pressure and flow structure inside the rotary compressor are obtained to analyze the work consumption and efficiency. The geometry of the compressor such as volume, inlet angle, and mass of reed valve are varied to look for optimal performance and design margin as the suggestions for manufacturing. The work done on refrigerant increases proportionally with the volume of the compressor. However, there is an optimal volume for efficiency. The design margin for inlet angle is determined. The best efficiency exists in a specific inlet angle. Larger mass of reed valve leads to the increase of input power due to the additional resistance from greater inertia, which causes a decrease of efficiency. The flow visualization by simulation diagnoses the potential factors, which may cause noise problem.
 
