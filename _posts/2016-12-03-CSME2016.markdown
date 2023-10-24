@@ -3,7 +3,7 @@ layout: post
 title: The Effect of Gap between Rolling Piston and Blade on the Performance of a Rotary Compressor, CSME, 2016.
 date: 2016-12-03 08:00:00 +0800
 description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. # Add post description (optional)
-img: TCSME2016.png # Add image post (optional)
+img: CSME2016.png # Add image post (optional)
 fig-caption: # Add figcaption (optional)
 tags: [Rolling Piston, Numerical]
 ---
