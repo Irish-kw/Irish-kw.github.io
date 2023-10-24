@@ -10,3 +10,6 @@ tags: [Heat Transfer, Numerical]
 The influence factors on the heat transfer performance of a loop thermosyphon system, a passive cooling device, are studied systematically. The parameters investigated include types of enhanced boiling structure, the depth to width ratio of enhanced boiling structures, the gap of evaporator, the condenser height and the inclination of evaporator. The results show the depth to width ratio and the condenser height has positive influences on the heat transfer performance. An optimal channel gap of evaporator exists and possesses better heat transfer performance. The inclination effect of evaporator may not be favorable to heat transfer. Among those, the horizontal and 90° inclination of evaporator has better cooling performance.
 
 [Full-text PDF Download](https://cdnsciencepub.com/doi/10.1139/tcsme-2016-0078)
+
+Cite our paper
+> Li-Chieh Hsu, Guo-Wei Wong, and Kung-Ting Chen. 2016. THE INFLUENCE FACTORS ON HEAT TRANSFER PERFORMANCE OF LOOP THERMOSYPHON SYSTEM. Transactions of the Canadian Society for Mechanical Engineering. 40(5): 947-958. https://doi.org/10.1139/tcsme-2016-0078
