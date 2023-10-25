@@ -1,0 +1,15 @@
+---
+layout: post
+title: Building Cybersecurity Ontology for Understanding and Reasoning Adversary Tactics and Techniques, IEEE Big Data, 2022.
+date: 2022-12-17 08:00:00 +0800
+description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. # Add post description (optional)
+img: BigData2022.png # Add image post (optional)
+fig-caption: # Add figcaption (optional)
+tags: [OWL,Semantics,Organizations,Ontologies,Big Data,Information retrieval,Cognition]
+---
+Cyber threats have become more prevalent than ever. Cyber Threat Intelligence (CTI) reports and MITRE ATTCK® framework play an imperative role in helping experts and organizations assess current and potential attacks, such as Advanced Persistent Threats (APT). However, the task of extracting valuable information from unstructured texts remains an ongoing challenge. In this work, we present a framework for understanding and reasoning adversary tactics and techniques. We construct an ontology structure and propose an automatic information extraction method that is capable of integrating the parsed information from CTI reports into each instance. The ontology is represented in the Web Ontology Language (OWL) accessible with the SPARQL query language. Our evaluation shows that the proposed information extraction method outperforms other state-of-the-art neural network-based methods in terms of precision. Furthermore, our framework can effectively infer adversary information, which efficiently supports security analysts recognize tactics and techniques.
+
+[Full-text PDF Download](https://ieeexplore.ieee.org/document/10021134)
+
+Cite our paper
+> Chiao-Cheng Huang; Pei-Yu Huang; Ying-Ren Kuo; Guo-Wei Wong; Yi-Ting Huang; Yeali S. Sun; Meng Chang Chen, "Building Cybersecurity Ontology for Understanding and Reasoning Adversary Tactics and Techniques," 2022 IEEE International Conference on Big Data (Big Data), Osaka, Japan, 2022, pp. 4266-4274, doi: 10.1109/BigData55660.2022.10021134.
