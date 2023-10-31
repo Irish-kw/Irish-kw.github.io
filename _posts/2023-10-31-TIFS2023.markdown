@@ -1,0 +1,29 @@
+---
+layout: post
+title: [Q1, Accept]Attention-Based API Locating for Malware Techniques, IEEE TIFS, 2023.
+date: 2023-10-31 08:00:00 +0800
+description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. # Add post description (optional)
+img: TIFS2023.png # Add image post (optional)
+fig-caption: # Add figcaption (optional)
+tags: [TIFS, Malware, API Calls, Locating, Attention, DeepLearning]
+---
+This paper presents APILI, an innovative approach
+to behavior-based malware analysis that utilizes deep learning
+to locate the API calls corresponding to discovered malware
+techniques in dynamic execution traces. APILI defines mul-
+tiple attentions between API calls, resources, and techniques,
+incorporating MITRE ATT&CK framework, adversary tactics,
+techniques and procedures, through a neural network. We employ
+fine-tuned BERT for arguments/resources embedding, SVD for
+technique representation, and several design enhancements, in-
+cluding layer structure and noise addition, to improve the locating
+performance. To the best of our knowledge, this is the first
+attempt to locate low-level API calls that correspond to high-
+level malicious behaviors (that is, techniques). Our evaluation
+demonstrates that APILI outperforms other traditional and
+machine learning techniques in both technique discovery and
+API locating. These results indicate the promising performance
+of APILI, thus allowing it to reduce the analysis workload
+
+
+Guo-Wei Wong, Yi-Ting Huang, Ying-Ren Guo, Yeali Sun, Meng Chang Chen
