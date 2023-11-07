@@ -25,5 +25,7 @@ machine learning techniques in both technique discovery and
 API locating. These results indicate the promising performance
 of APILI, thus allowing it to reduce the analysis workload
 
+[Full-text PDF Download](https://ieeexplore.ieee.org/document/10309174/authors#authors)
 
-Guo-Wei Wong, Yi-Ting Huang, Ying-Ren Guo, Yeali Sun, Meng Chang Chen
+Cite our paper
+>G. -W. Wong, Y. -T. Huang, Y. -R. Guo, Y. Sun and M. C. Chen, "Attention-Based API Locating for Malware Techniques," in IEEE Transactions on Information Forensics and Security, doi: 10.1109/TIFS.2023.3330337.
