@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Extreme Event Discovery With Self-Attention for PM2.5 Anomaly Prediction, IEEE Intelligent Systems, 2023.
+title: (IF=6.4)Extreme Event Discovery With Self-Attention for PM2.5 Anomaly Prediction, IEEE Intelligent Systems, 2023.
 date: 2023-01-13 08:00:00 +0800
 description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. # Add post description (optional)
 img: IntelligentSystems2023.png # Add image post (optional)
