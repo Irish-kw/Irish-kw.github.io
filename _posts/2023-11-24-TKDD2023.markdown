@@ -1,0 +1,28 @@
+---
+layout: post
+title: Sparse Grid Imputation Using Unpaired Imprecise Auxiliary Data: Theory and Application to PM2.5 Estimation, ACM TKDD, 2023.
+date: 2023-11-24 08:00:00 +0800
+description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. # Add post description (optional)
+img: TKDD2023.png # Add image post (optional)
+fig-caption: # Add figcaption (optional)
+tags: [TKDD, Sparse, Imputation, PM2.5]
+---
+Sparse grid imputation (SGI) is a challenging problem, as its goal is to infer the values of the entire grid from a
+limited number of cells with values. Traditionally, the problem is solved using regression methods such as
+KNN and kriging, whereas in the real world, there is often extra information—usually imprecise—that can aid
+inference and yield better performance. In the SGI problem, in addition to the limited number of fixed grid cells
+with precise target domain values, there are contextual data and imprecise observations over the whole grid.
+To solve this problem, we propose a distribution estimation theory for the whole grid and realize the theory via
+the composition architecture of the Target-Embedding and the Contextual CycleGAN trained with contextual
+information and imprecise observations. Contextual CycleGAN is structured as two generator-discriminator
+pairs and uses different types of contextual loss to guide the training. We consider the real-world problem of
+fine-grained PM2.5 inference with realistic settings: a few (less than 1%) grid cells with precise PM2.5 data
+and all grid cells with contextual information concerning weather and imprecise observations from satellites
+and microsensors. The task is to infer reasonable values for all grid cells. As there is no ground truth for
+empty cells, out-of-sample MSE (mean squared error) and JSD (Jensen–Shannon divergence) measurements
+are used in the empirical study. The results show that Contextual CycleGAN supports the proposed theory
+and outperforms the methods used for comparison.
+
+
+Cite our paper
+>M.-C Yang, G.-W. Wong and M.-C.Chen, "Sparse Grid Imputation Using Unpaired Imprecise Auxiliary Data: Theory and Application to PM2.5 Estimation," in ACM Transactions on Knowledge Discovery from Data.
