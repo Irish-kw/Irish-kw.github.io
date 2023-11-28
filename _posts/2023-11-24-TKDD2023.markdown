@@ -24,5 +24,7 @@ are used in the empirical study. The results show that Contextual CycleGAN suppo
 and outperforms the methods used for comparison.
 
 
+[Full-text PDF Download](https://dl.acm.org/doi/10.1145/3634751)
+
 Cite our paper
->M.-C Yang, G.-W. Wong and M.-C.Chen, "Sparse Grid Imputation Using Unpaired Imprecise Auxiliary Data: Theory and Application to PM2.5 Estimation," in ACM Transactions on Knowledge Discovery from Data.
+>Ming-Chuan Yang, Guo-Wei Wong, and Meng Chang Chen. 2023. Sparse Grid Imputation Using Unpaired Imprecise Auxiliary Data: Theory and Application to PM2.5 Estimation. ACM Trans. Knowl. Discov. Data Just Accepted (November 2023). https://doi.org/10.1145/3634751
