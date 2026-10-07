@@ -106,19 +106,37 @@
       </div>
     </section>
 
-    <!-- ================= Citation metrics (Google Scholar) =================
-         Static numbers: Google Scholar has no public API. Update the three values and
-         the "as of" date below when you want them refreshed. -->
-    <section class="stats" aria-labelledby="stats-h">
+    <!-- ================= News banner (above About) =================
+         Newest first. The lead line is the highlighted announcement; when there is newer
+         news, move the "New" lead to it and push the old lead into the list below. -->
+    <section class="news-banner" aria-labelledby="news-h">
       <div class="container">
-        <h2 class="visually-hidden" id="stats-h">Citation metrics</h2>
-        <div class="stats-inner reveal">
-          <ul class="stat-list">
-            <li class="stat"><span class="stat-num">80</span><span class="stat-label">Citations</span></li>
-            <li class="stat"><span class="stat-num">6</span><span class="stat-label">h-index</span></li>
-            <li class="stat"><span class="stat-num">3</span><span class="stat-label">i10-index</span></li>
-          </ul>
-          <p class="stats-note">Source: Google Scholar, as of Oct 2026.<br><a href="https://scholar.google.com/citations?user=DoXDAi8AAAAJ&amp;hl=en">View full profile<svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a></p>
+        <div class="news-banner-inner reveal">
+          <h2 class="news-banner-title" id="news-h">News</h2>
+          <div class="news-banner-body">
+            <p class="news-lead">
+              <span class="news-tag">New</span>
+              <time datetime="2026">2026</time>
+              <span class="news-lead-text"><strong>Accepted to ACM TIST</strong> (<em>Just Accepted</em>): <a href="#pub-tist">Learnable Staircase Activations for Ordinal Outputs under Mutual Information Regularization</a>.</span>
+            </p>
+            <ul class="news-list">
+              <li><time datetime="2026-06">Jun 2026</time><span>TGCM preprint on arXiv.</span></li>
+              <li><time datetime="2025">2025</time><span>Saga published in IEEE TDSC.</span></li>
+              <li><time datetime="2025">2025</time><span>Two posters at ACM CCS 2025.</span></li>
+              <li><time datetime="2025">2025</time><span>APT attribution paper at IEEE ICC 2025.</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= Google Scholar link ================= -->
+    <section class="scholar-band" aria-label="Google Scholar">
+      <div class="container">
+        <div class="scholar-inner reveal">
+          <span class="scholar-icon" aria-hidden="true"><svg class="icon"><use href="#i-scholar"/></svg></span>
+          <p class="scholar-text"><strong>Google Scholar</strong><span>Citations and the full publication list</span></p>
+          <a class="btn btn-primary" href="https://scholar.google.com/citations?user=DoXDAi8AAAAJ&amp;hl=en">View profile<svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a>
         </div>
       </div>
     </section>
@@ -131,8 +149,10 @@
           <div class="about-text reveal">
             <p>I work on <strong>AI systems for security</strong>, <strong>graph reasoning</strong>, and <strong>observable agentic software</strong>. My recent research focuses on recovering structure from noisy or incomplete evidence, understanding long-running APT campaigns, and building systems that make AI-agent execution behavior inspectable.</p>
             <p>Earlier work includes attention-based API locating for malware techniques, a cybersecurity ontology for adversary tactics and techniques, and PM2.5 grid imputation and anomaly prediction. Before that, I worked on numerical simulation of rotary compressors and heat-transfer systems.</p>
-            <div class="interests">
-              <h3 class="mini-label">Interests</h3>
+            </div>
+          <aside class="reveal" aria-label="Interests">
+            <div class="panel">
+              <h3>Interests</h3>
               <ul class="chips">
                 <li class="chip">AI Security</li>
                 <li class="chip">Graph Reasoning</li>
@@ -140,21 +160,6 @@
                 <li class="chip">APT Campaign Analysis</li>
                 <li class="chip">Execution Provenance</li>
                 <li class="chip">Security Memory</li>
-              </ul>
-            </div>
-          </div>
-          <aside class="reveal" aria-label="News">
-            <div class="panel">
-              <h3>News</h3>
-              <ul class="news">
-                <li class="news-featured">
-                  <div class="news-featured-head"><span class="news-tag">New</span><time datetime="2026">2026</time></div>
-                  <p><strong>Accepted to ACM TIST</strong> (<em>Just Accepted</em>): <a href="#pub-tist">Learnable Staircase Activations for Ordinal Outputs under Mutual Information Regularization</a>.</p>
-                </li>
-                <li><time datetime="2026-06">Jun 2026</time><span>TGCM preprint on arXiv.</span></li>
-                <li><time datetime="2025">2025</time><span>Saga published in IEEE TDSC.</span></li>
-                <li><time datetime="2025">2025</time><span>Two posters at ACM CCS 2025.</span></li>
-                <li><time datetime="2025">2025</time><span>APT attribution paper at IEEE ICC 2025.</span></li>
               </ul>
             </div>
           </aside>
