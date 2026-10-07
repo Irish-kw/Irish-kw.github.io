@@ -106,6 +106,23 @@
       </div>
     </section>
 
+    <!-- ================= Citation metrics (Google Scholar) =================
+         Static numbers: Google Scholar has no public API. Update the three values and
+         the "as of" date below when you want them refreshed. -->
+    <section class="stats" aria-labelledby="stats-h">
+      <div class="container">
+        <h2 class="visually-hidden" id="stats-h">Citation metrics</h2>
+        <div class="stats-inner reveal">
+          <ul class="stat-list">
+            <li class="stat"><span class="stat-num">80</span><span class="stat-label">Citations</span></li>
+            <li class="stat"><span class="stat-num">6</span><span class="stat-label">h-index</span></li>
+            <li class="stat"><span class="stat-num">3</span><span class="stat-label">i10-index</span></li>
+          </ul>
+          <p class="stats-note">Source: Google Scholar, as of Oct 2026.<br><a href="https://scholar.google.com/citations?user=DoXDAi8AAAAJ&amp;hl=en">View full profile<svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a></p>
+        </div>
+      </div>
+    </section>
+
     <!-- ================= About ================= -->
     <section class="section" id="about" aria-labelledby="about-h">
       <div class="container">
@@ -126,10 +143,14 @@
               </ul>
             </div>
           </div>
-          <aside class="reveal" aria-label="Recent items">
+          <aside class="reveal" aria-label="News">
             <div class="panel">
-              <h3>Recent</h3>
+              <h3>News</h3>
               <ul class="news">
+                <li class="news-featured">
+                  <div class="news-featured-head"><span class="news-tag">New</span><time datetime="2026">2026</time></div>
+                  <p><strong>Accepted to ACM TIST</strong> (<em>Just Accepted</em>): <a href="#pub-tist">Learnable Staircase Activations for Ordinal Outputs under Mutual Information Regularization</a>.</p>
+                </li>
                 <li><time datetime="2026-06">Jun 2026</time><span>TGCM preprint on arXiv.</span></li>
                 <li><time datetime="2025">2025</time><span>Saga published in IEEE TDSC.</span></li>
                 <li><time datetime="2025">2025</time><span>Two posters at ACM CCS 2025.</span></li>
@@ -215,10 +236,10 @@
           <section class="pub-year" aria-labelledby="y2026">
             <h3 class="year" id="y2026">2026</h3>
             <ol class="pub-list">
-              <li class="pub" data-year="2026" data-first="true" data-kind="review">
+              <li class="pub" id="pub-tist" data-year="2026" data-first="true" data-kind="journal">
                 <h4 class="pub-title">Learnable Staircase Activations for Ordinal Outputs under Mutual Information Regularization</h4>
-                <p class="pub-venue">In peer review, 2026</p>
-                <p class="pub-meta"><span class="badge badge-review">Under review</span><span class="badge badge-first">First author</span></p>
+                <p class="pub-venue"><em>ACM Transactions on Intelligent Systems and Technology (TIST)</em>, Just Accepted, 2026</p>
+                <p class="pub-meta"><span class="badge badge-journal">Journal</span><span class="badge badge-accepted">Just Accepted</span><span class="badge badge-first">First author</span></p>
               </li>
               <li class="pub" data-year="2026" data-first="true" data-kind="preprint">
                 <h4 class="pub-title">TGCM: Topic-Guided Generative Disentanglement of Interleaved APT Technique Sequences</h4>

@@ -21,7 +21,15 @@ fade-in on scroll.
 
 - **Publications**: each paper is one `<li class="pub">` inside its year group in
   `index.html`. `data-first="true"` marks first-author papers and `data-kind` is one of
-  `journal`, `conference`, `poster`, `preprint`, `review`; these drive the filter buttons.
+  `journal`, `conference`, `poster`, `preprint`; these drive the filter buttons. A
+  "Just Accepted" paper uses `badge-accepted`; when it is published, replace that badge and
+  the venue line with the final volume, pages and DOI.
+- **Citation metrics**: the band above About holds three static numbers (Citations, h-index,
+  i10-index) copied from Google Scholar, which has no public API. Edit the `.stat-num`
+  values and the "as of" date in the `.stats-note` paragraph to refresh them.
+- **News**: the list in the About section is newest first. The first `<li>` uses the
+  `news-featured` class for the highlighted "New" announcement; give older items a plain
+  `<li><time>…</time><span>…</span></li>` and move the highlight when there is newer news.
 - **Contact and links**: search `index.html` for `mailto:` and `github.com/Irish-kw`.
 - **Photo**: replace `assets/img/avatar.jpg` (square, at least 480 px), or delete the
   `.avatar-wrap` block in the hero.
