@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Guo-Wei Wong | AI Security &amp; Graph Reasoning</title>
+  <meta name="description" content="Guo-Wei Wong is an AI security researcher working on graph reasoning under incomplete observations, observable agentic software, and APT campaign analysis.">
+  <meta name="author" content="Guo-Wei Wong">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#fbfcfd" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0d1117" media="(prefers-color-scheme: dark)">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Guo-Wei Wong | AI Security &amp; Graph Reasoning">
+  <meta property="og:description" content="AI security researcher: graph reasoning under incomplete observations, observable agentic software, APT campaign analysis.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>
+    /* Runs before first paint: enables JS-only styles and applies a saved theme choice without a flash. */
+    (function () {
+      var r = document.documentElement;
+      r.classList.add("js");
+      try {
+        var t = localStorage.getItem("theme");
+        if (t === "light" || t === "dark") r.setAttribute("data-theme", t);
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <!-- Icon sprite -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="i-github" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></symbol>
+    <symbol id="i-scholar" viewBox="0 0 24 24"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+    <symbol id="i-ext" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-pkg" viewBox="0 0 24 24"><path d="m7.5 4.27 9 5.15"/><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5M12 22V12"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></symbol>
+  </svg>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Guo-Wei Wong, back to top">
+        <img src="favicon.svg" alt="" width="28" height="28">
+        <span>Guo-Wei Wong</span>
+      </a>
+      <nav class="nav" aria-label="Sections">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#projects">Projects</a>
+        <a href="#publications">Publications</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark theme" aria-pressed="false">
+        <svg class="icon i-sun" aria-hidden="true"><use href="#i-sun"/></svg>
+        <svg class="icon i-moon" aria-hidden="true"><use href="#i-moon"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ================= Hero ================= -->
+    <section class="hero" id="top" aria-labelledby="name">
+      <svg class="hero-net" viewBox="0 0 520 420" aria-hidden="true" focusable="false">
+        <g fill="none">
+          <path class="edge" d="M60 80 150 40 230 110 330 60 430 120 480 230 390 300 290 250 190 200 90 170Z"/>
+          <path class="edge b" d="M230 110 190 200M230 110 290 250M430 120 390 300M190 200 130 320 250 370 290 250M390 300 440 380 250 370"/>
+          <path class="edge" d="M330 60 290 250M150 40 90 170"/>
+        </g>
+        <circle class="node-a" cx="60" cy="80" r="5"/>
+        <circle class="node-b" cx="150" cy="40" r="4"/>
+        <circle class="node-a" cx="230" cy="110" r="7"/>
+        <circle class="node-b" cx="330" cy="60" r="5"/>
+        <circle class="node-a" cx="430" cy="120" r="6"/>
+        <circle class="node-b" cx="480" cy="230" r="4"/>
+        <circle class="node-a" cx="390" cy="300" r="7"/>
+        <circle class="node-b" cx="290" cy="250" r="5"/>
+        <circle class="node-a" cx="190" cy="200" r="6"/>
+        <circle class="node-b" cx="90" cy="170" r="4"/>
+        <circle class="node-a" cx="130" cy="320" r="5"/>
+        <circle class="node-b" cx="250" cy="370" r="4"/>
+        <circle class="node-b" cx="440" cy="380" r="5"/>
+      </svg>
+
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow"><span class="dot" aria-hidden="true"></span>AI Security · Graph Learning · Agent Observability</p>
+          <h1 id="name">Guo-Wei Wong</h1>
+          <p class="hero-role">AI security researcher</p>
+          <p class="hero-lead">I study graph reasoning under incomplete observations, observable agentic software, and long-running APT campaign analysis.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#publications"><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>Publications</a>
+            <a class="btn" href="https://scholar.google.com/citations?user=DoXDAi8AAAAJ&amp;hl=en"><svg class="icon" aria-hidden="true"><use href="#i-scholar"/></svg>Google Scholar</a>
+            <a class="btn" href="https://github.com/Irish-kw"><svg class="icon icon-fill" aria-hidden="true"><use href="#i-github"/></svg>GitHub</a>
+            <a class="btn" href="#contact"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>Email</a>
+          </div>
+        </div>
+        <div class="avatar-wrap">
+          <div class="avatar-ring">
+            <img class="avatar" src="assets/img/avatar.jpg" width="480" height="480" alt="Portrait of Guo-Wei Wong">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= About ================= -->
+    <section class="section" id="about" aria-labelledby="about-h">
+      <div class="container">
+        <div class="section-head reveal"><h2 id="about-h">About</h2></div>
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>I work on <strong>AI systems for security</strong>, <strong>graph reasoning</strong>, and <strong>observable agentic software</strong>. My recent research focuses on recovering structure from noisy or incomplete evidence, understanding long-running APT campaigns, and building systems that make AI-agent execution behavior inspectable.</p>
+            <p>Earlier work includes attention-based API locating for malware techniques, a cybersecurity ontology for adversary tactics and techniques, and PM2.5 grid imputation and anomaly prediction. Before that, I worked on numerical simulation of rotary compressors and heat-transfer systems.</p>
+            <div class="interests">
+              <h3 class="mini-label">Interests</h3>
+              <ul class="chips">
+                <li class="chip">AI Security</li>
+                <li class="chip">Graph Reasoning</li>
+                <li class="chip">Agent Observability</li>
+                <li class="chip">APT Campaign Analysis</li>
+                <li class="chip">Execution Provenance</li>
+                <li class="chip">Security Memory</li>
+              </ul>
+            </div>
+          </div>
+          <aside class="reveal" aria-label="Recent items">
+            <div class="panel">
+              <h3>Recent</h3>
+              <ul class="news">
+                <li><time datetime="2026-06">Jun 2026</time><span>TGCM preprint on arXiv.</span></li>
+                <li><time datetime="2025">2025</time><span>Saga published in IEEE TDSC.</span></li>
+                <li><time datetime="2025">2025</time><span>Two posters at ACM CCS 2025.</span></li>
+                <li><time datetime="2025">2025</time><span>APT attribution paper at IEEE ICC 2025.</span></li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= Research ================= -->
+    <section class="section section-alt" id="research" aria-labelledby="research-h">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 id="research-h">Research directions</h2>
+          <p class="section-sub">Observe agent and system behavior, preserve long-running evidence, reason over incomplete structure, and generate campaign graphs.</p>
+        </div>
+        <div class="cards">
+          <article class="card reveal">
+            <span class="card-verb">Observe</span>
+            <h3>ExecWeave</h3>
+            <p>Cross-layer execution provenance for observable agentic software, connecting agent semantics with processes, files, and network evidence.</p>
+            <a class="card-link" href="#projects">See the project &rarr;</a>
+          </article>
+          <article class="card reveal">
+            <span class="card-verb">Preserve</span>
+            <h3>SLM Streaming Security Memory</h3>
+            <p>Compact persistent memory for long-running security reasoning without replaying arbitrary discarded history.</p>
+          </article>
+          <article class="card reveal">
+            <span class="card-verb">Reason</span>
+            <h3>CURVE</h3>
+            <p>Graph-theoretic reasoning under incomplete observations, with a focus on support, exhaustiveness, and occurrence relations.</p>
+          </article>
+          <article class="card reveal">
+            <span class="card-verb">Generate</span>
+            <h3>GraphGeneration</h3>
+            <p>Conditional attack-campaign graph generation from security evidence and structured technique/campaign representations.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= Projects ================= -->
+    <section class="section" id="projects" aria-labelledby="projects-h">
+      <div class="container">
+        <div class="section-head reveal"><h2 id="projects-h">Featured project</h2></div>
+        <article class="feature reveal">
+          <a class="feature-media" href="https://github.com/Irish-kw/ExecWeave" tabindex="-1" aria-hidden="true">
+            <img src="assets/img/execweave.jpg" width="1376" height="768" loading="lazy" alt="">
+          </a>
+          <div class="feature-body">
+            <span class="card-verb">Software</span>
+            <h3>ExecWeave</h3>
+            <p class="tagline">Cross-Layer Execution Provenance for Observable Agentic Software</p>
+            <p>A local-first observability system that combines provider-level agent semantics with operating-system runtime evidence and renders the result as an interactive execution graph.</p>
+            <div class="feature-actions">
+              <a class="btn btn-primary" href="https://github.com/Irish-kw/ExecWeave"><svg class="icon icon-fill" aria-hidden="true"><use href="#i-github"/></svg>Repository</a>
+              <a class="btn" href="https://pypi.org/project/execweave/"><svg class="icon" aria-hidden="true"><use href="#i-pkg"/></svg>PyPI</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ================= Publications ================= -->
+    <section class="section section-alt" id="publications" aria-labelledby="pubs-h">
+      <div class="container">
+        <div class="section-head reveal"><h2 id="pubs-h">Publications</h2></div>
+
+        <div class="pub-tools">
+          <div class="filters" role="group" aria-label="Filter publications">
+            <button class="filter" type="button" data-filter="all" aria-pressed="true">All</button>
+            <button class="filter" type="button" data-filter="first" aria-pressed="false">First author</button>
+            <button class="filter" type="button" data-filter="journal" aria-pressed="false">Journals</button>
+            <button class="filter" type="button" data-filter="conference" aria-pressed="false">Conferences &amp; posters</button>
+          </div>
+          <p class="pub-count" id="pub-count" role="status" aria-live="polite"></p>
+        </div>
+
+        <div class="pub-groups">
+          <section class="pub-year" aria-labelledby="y2026">
+            <h3 class="year" id="y2026">2026</h3>
+            <ol class="pub-list">
+              <li class="pub" data-year="2026" data-first="true" data-kind="review">
+                <h4 class="pub-title">Learnable Staircase Activations for Ordinal Outputs under Mutual Information Regularization</h4>
+                <p class="pub-venue">In peer review, 2026</p>
+                <p class="pub-meta"><span class="badge badge-review">Under review</span><span class="badge badge-first">First author</span></p>
+              </li>
+              <li class="pub" data-year="2026" data-first="true" data-kind="preprint">
+                <h4 class="pub-title">TGCM: Topic-Guided Generative Disentanglement of Interleaved APT Technique Sequences</h4>
+                <p class="pub-authors"><strong>Guo-Wei Wong</strong>, Ming-Chuan Yang, Shou-De Lin, Wang-Chien Lee, Meng Chen</p>
+                <p class="pub-venue"><em>arXiv preprint</em> arXiv:2606.18651, 2026</p>
+                <p class="pub-meta"><span class="badge badge-preprint">Preprint</span><span class="badge badge-first">First author</span><a class="pub-link" href="https://arxiv.org/abs/2606.18651">arXiv<svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a></p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="pub-year" aria-labelledby="y2025">
+            <h3 class="year" id="y2025">2025</h3>
+            <ol class="pub-list">
+              <li class="pub" data-year="2025" data-first="false" data-kind="journal">
+                <h4 class="pub-title">Saga: Synthetic Audit Log Generation for APT Campaigns</h4>
+                <p class="pub-authors">Yi-Ting Huang, Ying-Ren Guo, Yu-Sheng Yang, <strong>Guo-Wei Wong</strong>, Yu-Zih Jheng, Yeali Sun, Jessemyn Modini, Timothy Lynar, Meng Chang Chen</p>
+                <p class="pub-venue"><em>IEEE Transactions on Dependable and Secure Computing</em>, 2025</p>
+                <p class="pub-meta"><span class="badge badge-journal">Journal</span></p>
+              </li>
+              <li class="pub" data-year="2025" data-first="true" data-kind="poster">
+                <h4 class="pub-title">Poster: When Logs Misbehave: Retrieving Known APTs from Noisy Graphs</h4>
+                <p class="pub-authors"><strong>Guo-Wei Wong</strong>, Yi-Ting Huang, Ying-Ren Guo, Ming-Chuan Yang, Shou-De Lin, Wang-Chien Lee, Meng Chang Chen</p>
+                <p class="pub-venue"><em>ACM Conference on Computer and Communications Security (CCS)</em>, Poster, 2025</p>
+                <p class="pub-meta"><span class="badge badge-poster">Poster</span><span class="badge badge-first">First author</span></p>
+              </li>
+              <li class="pub" data-year="2025" data-first="false" data-kind="poster">
+                <h4 class="pub-title">Poster: LogCraft: Crafting CVE-Aware Synthetic Worlds (Logs)</h4>
+                <p class="pub-authors">Kai-Xian Wong, Chan-Jien Tan, Yi-Ting Huang, Ying-Ren Guo, Yu-Zih Jheng, <strong>Guo-Wei Wong</strong>, Meng Chang Chen</p>
+                <p class="pub-venue"><em>ACM Conference on Computer and Communications Security (CCS)</em>, Poster, 2025</p>
+                <p class="pub-meta"><span class="badge badge-poster">Poster</span></p>
+              </li>
+              <li class="pub" data-year="2025" data-first="false" data-kind="conference">
+                <h4 class="pub-title">A Cascade Approach for APT Campaign Attribution in System Event Logs: Technique Hunting and Subgraph Matching</h4>
+                <p class="pub-authors">Yi-Ting Huang, Ying-Ren Guo, <strong>Guo-Wei Wong</strong>, Meng Chang Chen</p>
+                <p class="pub-venue"><em>ICC 2025 &ndash; IEEE International Conference on Communications</em>, pp. 1073&ndash;1078, 2025</p>
+                <p class="pub-meta"><span class="badge badge-conference">Conference</span></p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="pub-year" aria-labelledby="y2024">
+            <h3 class="year" id="y2024">2024</h3>
+            <ol class="pub-list">
+              <li class="pub" data-year="2024" data-first="false" data-kind="journal">
+                <h4 class="pub-title">Sparse Grid Imputation Using Unpaired Imprecise Auxiliary Data: Theory and Application to PM2.5 Estimation</h4>
+                <p class="pub-authors">Ming-Chuan Yang, <strong>Guo-Wei Wong</strong>, Meng Chang Chen</p>
+                <p class="pub-venue"><em>ACM Transactions on Knowledge Discovery from Data</em>, 18(3):1&ndash;26, 2024</p>
+                <p class="pub-meta"><span class="badge badge-journal">Journal</span><a class="pub-link" href="https://doi.org/10.1145/3634751">DOI<svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a></p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="pub-year" aria-labelledby="y2023">
+            <h3 class="year" id="y2023">2023</h3>
+            <ol class="pub-list">
+              <li class="pub" data-year="2023" data-first="true" data-kind="journal">
+                <h4 class="pub-title">Attention-Based API Locating for Malware Techniques</h4>
+                <p class="pub-authors"><strong>Guo-Wei Wong</strong>, Yi-Ting Huang, Ying-Ren Guo, Yeali Sun, Meng Chang Chen</p>
+                <p class="pub-venue"><em>IEEE Transactions on Information Forensics and Security</em>, 19:1199&ndash;1212, 2023</p>
+                <p class="pub-meta"><span class="badge badge-journal">Journal</span><span class="badge badge-first">First author</span><a class="pub-link" href="https://doi.org/10.1109/TIFS.2023.3330337">DOI<svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a></p>
+              </li>
+              <li class="pub" data-year="2023" data-first="false" data-kind="journal">
+                <h4 class="pub-title">Extreme Event Discovery with Self-Attention for PM2.5 Anomaly Prediction</h4>
+                <p class="pub-authors">Hsin-Chih Yang, Ming-Chuan Yang, <strong>Guo-Wei Wong</strong>, Meng Chang Chen</p>
+                <p class="pub-venue"><em>IEEE Intelligent Systems</em>, 38(2):36&ndash;45, 2023</p>
+                <p class="pub-meta"><span class="badge badge-journal">Journal</span><a class="pub-link" href="https://doi.org/10.1109/MIS.2023.3236561">DOI<svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a></p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="pub-year" aria-labelledby="y2022">
+            <h3 class="year" id="y2022">2022</h3>
+            <ol class="pub-list">
+              <li class="pub" data-year="2022" data-first="false" data-kind="conference">
+                <h4 class="pub-title">Building Cybersecurity Ontology for Understanding and Reasoning Adversary Tactics and Techniques</h4>
+                <p class="pub-authors">Chiao-Cheng Huang, Pei-Yu Huang, Ying-Ren Kuo, <strong>Guo-Wei Wong</strong>, Yi-Ting Huang, Yeali S. Sun, Meng Chang Chen</p>
+                <p class="pub-venue"><em>2022 IEEE International Conference on Big Data (Big Data)</em>, pp. 4266&ndash;4274, 2022</p>
+                <p class="pub-meta"><span class="badge badge-conference">Conference</span><a class="pub-link" href="https://doi.org/10.1109/BigData55660.2022.10021134">DOI<svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a></p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="pub-year" aria-labelledby="y2020">
+            <h3 class="year" id="y2020">2020</h3>
+            <ol class="pub-list">
+              <li class="pub" data-year="2020" data-first="false" data-kind="journal">
+                <h4 class="pub-title">Numerical Simulation for Flow of Rolling Piston Type of Rotary Compressor</h4>
+                <p class="pub-authors">Li-Chieh Hsu, <strong>Guo-Wei Wong</strong>, Po-Jui Lu, Fu-Shun Hsu, Ying-Chien Chen</p>
+                <p class="pub-venue"><em>Energies</em>, 13(10):2526, 2020</p>
+                <p class="pub-meta"><span class="badge badge-journal">Journal</span><a class="pub-link" href="https://doi.org/10.3390/en13102526">DOI<svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a></p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="pub-year" aria-labelledby="y2016">
+            <h3 class="year" id="y2016">2016</h3>
+            <ol class="pub-list">
+              <li class="pub" data-year="2016" data-first="false" data-kind="journal">
+                <h4 class="pub-title">The Influence Factors on Heat Transfer Performance of Loop Thermosyphon System</h4>
+                <p class="pub-authors">Li-Chieh Hsu, <strong>Guo-Wei Wong</strong>, Kung-Ting Chen</p>
+                <p class="pub-venue"><em>Transactions of the Canadian Society for Mechanical Engineering</em>, 40(5):947&ndash;958, 2016</p>
+                <p class="pub-meta"><span class="badge badge-journal">Journal</span><a class="pub-link" href="https://doi.org/10.1139/tcsme-2016-0078">DOI<svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a></p>
+              </li>
+            </ol>
+          </section>
+        </div>
+
+        <p class="pub-note">Author lists and venue details follow <a href="https://scholar.google.com/citations?user=DoXDAi8AAAAJ&amp;hl=en">Google Scholar</a>, which has the most current list.</p>
+      </div>
+    </section>
+
+    <!-- ================= Contact ================= -->
+    <section class="section" id="contact" aria-labelledby="contact-h">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 id="contact-h">Contact</h2>
+          <p class="section-sub">Questions about the papers, ExecWeave, or possible collaboration are welcome.</p>
+        </div>
+        <div class="contact-grid">
+          <a class="contact-item reveal" href="mailto:weisting@iis.sinica.edu.tw">
+            <span class="contact-icon"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg></span>
+            <span><span class="contact-label">Email</span><span class="contact-value">weisting@iis.sinica.edu.tw</span></span>
+          </a>
+          <a class="contact-item reveal" href="mailto:d10922026@ntu.edu.tw">
+            <span class="contact-icon"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg></span>
+            <span><span class="contact-label">Email</span><span class="contact-value">d10922026@ntu.edu.tw</span></span>
+          </a>
+          <a class="contact-item reveal" href="https://github.com/Irish-kw">
+            <span class="contact-icon"><svg class="icon icon-fill" aria-hidden="true"><use href="#i-github"/></svg></span>
+            <span><span class="contact-label">GitHub</span><span class="contact-value">Irish-kw</span></span>
+          </a>
+          <a class="contact-item reveal" href="https://scholar.google.com/citations?user=DoXDAi8AAAAJ&amp;hl=en">
+            <span class="contact-icon"><svg class="icon" aria-hidden="true"><use href="#i-scholar"/></svg></span>
+            <span><span class="contact-label">Google Scholar</span><span class="contact-value">Citations profile</span></span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year">2026</span> Guo-Wei Wong</p>
+      <p>Static site, no trackers.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
