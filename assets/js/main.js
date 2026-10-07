@@ -105,6 +105,34 @@
     sections.forEach(function (s) { spy.observe(s.el); });
   }
 
+  /* ---------- Copy BibTeX ---------- */
+  document.querySelectorAll("[data-copy]").forEach(function (btn) {
+    var label = btn.textContent;
+    var status = document.getElementById("copy-status");
+    function done(ok) {
+      btn.textContent = ok ? "Copied" : "Press Ctrl+C to copy";
+      if (status) status.textContent = ok ? "BibTeX copied to clipboard" : "Select the text and copy it manually";
+      setTimeout(function () { btn.textContent = label; }, 1800);
+    }
+    btn.addEventListener("click", function () {
+      var src = document.getElementById(btn.getAttribute("data-copy"));
+      if (!src) return;
+      var text = src.textContent;
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(function () { done(true); }, function () { done(false); });
+      } else {
+        var range = document.createRange();
+        range.selectNodeContents(src);
+        var sel = window.getSelection();
+        sel.removeAllRanges();
+        sel.addRange(range);
+        var ok = false;
+        try { ok = document.execCommand("copy"); } catch (e) { /* ignore */ }
+        done(ok);
+      }
+    });
+  });
+
   /* ---------- Reveal on scroll ---------- */
   var reveals = document.querySelectorAll(".reveal");
   var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;

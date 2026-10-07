@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Building Cybersecurity Ontology for Understanding and Reasoning Adversary Tactics and Techniques | Guo-Wei Wong</title>
+  <meta name="description" content="Chiao-Cheng Huang, Pei-Yu Huang, Ying-Ren Kuo et al.. 2022 IEEE International Conference on Big Data (Big Data), pp. 4266–4274, 2022.">
+  <meta name="author" content="Guo-Wei Wong">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#fbfcfd" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0d1117" media="(prefers-color-scheme: dark)">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Building Cybersecurity Ontology for Understanding and Reasoning Adversary Tactics and Techniques">
+  <meta property="og:description" content="Chiao-Cheng Huang, Pei-Yu Huang, Ying-Ren Kuo et al.. 2022 IEEE International Conference on Big Data (Big Data), pp. 4266–4274, 2022.">
+  <link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../assets/css/style.css">
+  <script>
+    (function () {
+      var r = document.documentElement;
+      r.classList.add("js");
+      try {
+        var t = localStorage.getItem("theme");
+        if (t === "light" || t === "dark") r.setAttribute("data-theme", t);
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <!-- Icon sprite -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="i-github" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></symbol>
+    <symbol id="i-scholar" viewBox="0 0 24 24"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+    <symbol id="i-ext" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-pkg" viewBox="0 0 24 24"><path d="m7.5 4.27 9 5.15"/><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5M12 22V12"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></symbol>
+  </svg>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="../../" aria-label="Guo-Wei Wong, home">
+        <img src="../../favicon.svg" alt="" width="28" height="28">
+        <span>Guo-Wei Wong</span>
+      </a>
+      <nav class="nav" aria-label="Sections">
+        <a href="../../#about">About</a>
+        <a href="../../#research">Research</a>
+        <a href="../../#projects">Projects</a>
+        <a href="../../#publications">Publications</a>
+        <a href="../../#contact">Contact</a>
+      </nav>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark theme" aria-pressed="false">
+        <svg class="icon i-sun" aria-hidden="true"><use href="#i-sun"/></svg>
+        <svg class="icon i-moon" aria-hidden="true"><use href="#i-moon"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="paper-hero">
+      <div class="container paper-wrap">
+        <p class="crumbs"><a href="../../#publications"><svg class="icon crumb-icon" aria-hidden="true"><use href="#i-arrow"/></svg>All publications</a></p>
+        <p class="paper-badges"><span class="badge badge-conference">Conference</span></p>
+        <h1 class="paper-title">Building Cybersecurity Ontology for Understanding and Reasoning Adversary Tactics and Techniques</h1>
+        <p class="paper-authors">Chiao-Cheng Huang, Pei-Yu Huang, Ying-Ren Kuo, <strong>Guo-Wei Wong</strong>, Yi-Ting Huang, Yeali S. Sun, Meng Chang Chen</p>
+        <p class="paper-venue"><em>2022 IEEE International Conference on Big Data (Big Data)</em>, pp. 4266–4274, 2022</p>
+        <div class="paper-actions"><a class="btn btn-primary" href="https://doi.org/10.1109/BigData55660.2022.10021134">DOI<svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg></a></div>
+      </div>
+    </section>
+
+    <article class="paper-body">
+      <div class="container paper-wrap">
+      <figure class="paper-figure reveal">
+        <img src="../../assets/img/papers/bigdata.png" alt="Pipeline from MITRE ATT&amp;CK procedure examples to an ontology queried through a web interface with SPARQL" loading="lazy">
+        <figcaption>Figure from the paper.</figcaption>
+      </figure>
+      <section class="paper-section reveal" aria-labelledby="abs-h">
+        <h2 id="abs-h">Abstract</h2>
+        <p class="abstract">Cyber threats have become more prevalent than ever. Cyber Threat Intelligence (CTI) reports and MITRE ATTCK® framework play an imperative role in helping experts and organizations assess current and potential attacks, such as Advanced Persistent Threats (APT). However, the task of extracting valuable information from unstructured texts remains an ongoing challenge. In this work, we present a framework for understanding and reasoning adversary tactics and techniques. We construct an ontology structure and propose an automatic information extraction method that is capable of integrating the parsed information from CTI reports into each instance. The ontology is represented in the Web Ontology Language (OWL) accessible with the SPARQL query language. Our evaluation shows that the proposed information extraction method outperforms other state-of-the-art neural network-based methods in terms of precision. Furthermore, our framework can effectively infer adversary information, which efficiently supports security analysts recognize tactics and techniques.</p>
+      </section>
+      <section class="paper-section reveal" aria-labelledby="kw-h">
+        <h2 id="kw-h">Keywords</h2>
+        <ul class="chips"><li class="chip">OWL</li><li class="chip">Semantics</li><li class="chip">Organizations</li><li class="chip">Ontologies</li><li class="chip">Big Data</li><li class="chip">Information retrieval</li><li class="chip">Cognition</li></ul>
+      </section>
+      <section class="paper-section reveal" aria-labelledby="cite-h">
+        <h2 id="cite-h">Cite</h2>
+        <div class="cite">
+          <pre class="cite-code"><code id="bibtex">@inproceedings{huang2022cybersecurity,
+  title     = {{Building Cybersecurity Ontology for Understanding and Reasoning Adversary Tactics and Techniques}},
+  author    = {Huang, Chiao-Cheng and
+               Huang, Pei-Yu and
+               Kuo, Ying-Ren and
+               Wong, Guo-Wei and
+               Huang, Yi-Ting and
+               Sun, Yeali S. and
+               Chen, Meng Chang},
+  booktitle = {2022 IEEE International Conference on Big Data (Big Data)},
+  pages     = {4266--4274},
+  year      = {2022},
+  doi       = {10.1109/BigData55660.2022.10021134}
+}</code></pre>
+          <button class="btn cite-copy" type="button" data-copy="bibtex">Copy BibTeX</button>
+          <span class="visually-hidden" role="status" aria-live="polite" id="copy-status"></span>
+        </div>
+      </section>
+
+      <nav class="paper-nav" aria-label="Other papers">
+        <a class="paper-nav-card is-prev" href="../extreme-event-discovery/"><span class="paper-nav-label">Previous</span><span class="paper-nav-title">Extreme Event Discovery with Self-Attention for PM2.5 Anomaly Prediction</span></a>
+        <a class="paper-nav-card is-next" href="../rolling-piston-simulation/"><span class="paper-nav-label">Next</span><span class="paper-nav-title">Numerical Simulation for Flow of Rolling Piston Type of Rotary Compressor</span></a>
+      </nav>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year">2026</span> Guo-Wei Wong</p>
+      <p><a href="../../">Back to home</a></p>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/main.js" defer></script>
+</body>
+</html>

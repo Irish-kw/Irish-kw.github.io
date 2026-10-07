@@ -24,6 +24,10 @@ fade-in on scroll.
   `journal`, `conference`, `poster`, `preprint`; these drive the filter buttons. A
   "Just Accepted" paper uses `badge-accepted`; when it is published, replace that badge and
   the venue line with the final volume, pages and DOI.
+- **Paper pages**: every published paper has its own page in `papers/<slug>/index.html`
+  (abstract, figure, keywords, BibTeX with a copy button, previous/next links). To add one, copy an
+  existing paper page, edit the text, and link the paper's title on the home page to it. The
+  Just Accepted ACM TIST paper has no page yet.
 - **Google Scholar**: the band above About is a plain link to the profile; there are no
   numbers to keep up to date. Change the `href` if the profile URL changes.
 - **News**: the banner above About is newest first. The lead line (`news-lead`) is the
